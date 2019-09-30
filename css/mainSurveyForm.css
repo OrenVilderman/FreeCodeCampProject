@@ -33,6 +33,8 @@
 textarea {
     background-color: var(--main-header-text-color);
     color: var(--main-dark-bg-color);
+    height: 4em;
+    width: 30em;
 }
 
 input {
@@ -180,6 +182,18 @@ select {
     color: var(--main-header-text-color);
 }
 
+@media (max-width: 900px) {
+    textarea {
+        height: 5em;
+        width: 20em;
+    }
+    
+    #sliderOptions {
+        width: 75%;
+        font-size: 2vmin;
+    }
+}
+
 @media (max-width: 600px) {
 	.fields {
 		grid-template-columns: 1fr !important;
@@ -202,5 +216,10 @@ select {
     
 	p {
 		margin: 0px 0px 18px 0px;
-	}
+    }
+    
+    textarea {
+        height: 6em;
+        width: 18em;
+    }
 }
