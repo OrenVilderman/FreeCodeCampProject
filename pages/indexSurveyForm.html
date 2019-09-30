@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Survey Form by Oren Vilderman</title> 
+    <link rel="stylesheet" type="text/css" href="../css/mainSurveyForm.css">
+  </head>
+  <body>
+  <header class="mainView">
+  </header>
+  <main id="main">
+    <div class="mode" title="Swith light/dark mode">
+      <button class="modeChanger" id='darkMode' onclick="darkMode()" title="Change mode to dark"></button>
+      <button class="modeChanger" id='lightMode' onclick="lightMode()" title="Change mode to light"></button>
+    </div>
+    <h1 id="title">Custumer Survey Form by Oren Vilderman</h1>
+    <div class="container">
+      <h2 id="description">Your opinion is important to us - Help us get better</h2>
+      <form id="survey-form" name="survey-form">
+        <fieldset>
+        <legend>Peronal Details:</legend>
+          <div id="name-field" class="fields">
+            <label id="name-label" class="labels" for="name"><span class="required">*</span> Name:</label>
+            <input id="name" class="inputs" type="text" name="name" placeholder="Full Name | " required>
+          </div>
+          <br>
+          <div id="email-field" class="fields">
+            <label id="email-label" class="labels" for="email"><span class="required">*</span> Email:</label>
+            <input id="email" class="inputs" type="email" name="email" placeholder="Email |" required>
+          </div>
+          <br>
+          <div id="age-field" class="fields">
+            <label id="age-label" class="labels" for="age"><span class="required">*</span> Age:</label>
+            <input id="number" class="inputs" type="number" max="150" min="16" name="age" placeholder="Age |" required>
+          </div>
+          <br>
+          <div id="number-field" class="fields">
+            <label id="number-label" class="labels" for="costumerNumber"><span class="required">*</span> Costumer Number:</label>
+            <input id="costumerNumber" class="inputs" type="number" max="70000" min="0" name="costumerNumber" placeholder="Costumer Number |" required>
+          </div>
+          <br>
+          <div id="radio-buttons" class="fields">
+              <label id="radiolist-label" class="labels" for="radiolist"><span class="required">*</span> Gender:</label>
+              <div id="radiolist">
+                <p>
+                  <label for="Female"><input id="Female" name="radio-buttons" type="radio" value="Female">Female</label>
+                </p>
+                <p>
+                  <label for="Male"><input id="Male" name="radio-buttons" type="radio" value="Male">Male</label>
+                </p>
+                <p>
+                  <label for="Prefer not to say"><input id="Prefer not to say" name="radio-buttons" type="radio" value="Prefer not to say">Prefer not to say</label>
+                </p>
+              </div>
+            </div>
+        </fieldset>
+        <fieldset>
+          <legend>Product Details:</legend>
+          <div id="dropdown" class="fields">
+            <label id="product-label" class="labels" for="product">Which of our products have you purchased?</label>
+            <select id="product">
+              <option disabled selected value="default">Select an option</option>
+              <option value="backTest">NPM Jest test suite</option>
+              <option value="GUITest">Intellij OCR test suite</option>
+              <option value="FunctionTest">Selenium Functionality test suite</option>
+              <option value="FakeTest">Cloud based Functionality test infrastructure</option>
+            </select>
+          </div><br>
+          <div id="slider" class="fields">
+            <label id="slide-label" class="labels" for="slide"></span>How would you rate our product?</label>
+            <div id="sliderOptions">
+              <label id="minSlide">Unsatisfactory</label><label id="maxSlide">Satisfactory</label>
+              <input id="slide" class="inputs" name="slide" type="range" min="1" max="100" value="50">
+            </div>
+          </div><br>
+          <div id="textarea" class="fields">
+            <label for="textarea" id="textarea-label">What is the main reason for your satisfaction rate?</label> 
+            <textarea id="inputs" cols="400" name="textarea" placeholder="Enter your comment here..." rows="4"></textarea>
+          </div>
+          <div id="checkboxes" class="fields">
+            <label for="checklist" id="checklist-label" class="labels">Please select what in your view are the key performance indicators for our products</label>
+            <div id="checklist">
+              <p><label for="bugsFound"><input id="bugsFound" name="checkboxes" class="checkboxes" type="checkbox" value=
+              "bugs">More bugs found percentage</label></p>
+              <p><label for="easyDeployment"><input id="easyDeployment" name="checkboxes" class="checkboxes" type="checkbox" value=
+              "bugs">Shorter deployments</label></p>
+              <p><label for="manualCover"><input id="manualCover" name="checkboxes" class="checkboxes" type="checkbox" value=
+              "bugs">Manual capabilities cover</label></p>
+              <p><label for="PerformanceCover"><input id="PerformanceCover" name="checkboxes" class="checkboxes" type="checkbox" value=
+              "bugs">Performance tests cover</label></p>
+              <p><label for="automatedCreation"><input id="automatedCreation" name="checkboxes" class="checkboxes" type="checkbox" value=
+              "bugs">Automated testing creation</label></p>
+              <p><label for="easyCreation"><input id="easyCreation" name="checkboxes" class="checkboxes" type="checkbox" value=
+              "bugs">Simple testing creation</label></p>
+              <p><label for="easyRecreation"><input id="easyRecreation" name="checkboxes" class="checkboxes" type="checkbox" value=
+              "bugs">Manual tests recreation</label></p>
+            </div>
+          </div>
+          <div id="textarea" class="fields">
+            <label for="textarea" id="textarea-label" class="labels">Please feel free to add any comments or suggestions</label> 
+            <textarea id="inputs" cols="50" name="textarea" placeholder="Enter your comment here..." rows="4"></textarea>
+          </div><button class="button" id="submit" type="submit">Submit</button>
+    </form>
+  </main>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script defer src="../js/mainSurveyForm.js"></script>
+  </body>
+</html>
