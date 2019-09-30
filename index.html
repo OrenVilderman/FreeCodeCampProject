@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FreeCodeCamp by Oren Vilderman</title> 
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/41bbdd327a.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
+			<div class ="container-fluid">
+				<nav id="navbar">
+					<ul class="nav-pills top">
+						<li><a href="#">Oren Vilderman</a></li>
+						<li class="contact pull-right"><a href="#contactMe">Contact</a></li>
+						<li class="pull-right"><a href="#">About ME</a></li>
+						<li class="pull-right"><a href="#projects">Projects</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="mainPage">
+			<div class="areaOne">
+				<div class="mode" title="Swith light/dark mode">
+					<button class="modeChanger" id='darkMode' onclick="darkMode()" title="Change mode to dark"></button>
+					<button class="modeChanger" id='lightMode' onclick="lightMode()" title="Change mode to light"></button>
+				</div>
+				<div id="welcome-section">
+					<h1>Oren Vilderman</h1>
+					<p>Tester during days, bugs breeder by nights</p>
+					<div class="btnList">
+						<a class="btn btn-primary" href="https://github.com/OrenVilderman" target="_blank" role="button"><i class="fab fa-github"></i>&nbsp;&nbsp; GitHub</a>
+						<a class="btn btn-primary" href="https://www.linkedin.com/in/oren-vilderman-5208a8171/" target="_blank" role="button"><i class="fab fa-linkedin"></i>&nbsp;&nbsp; Linkedin</a>
+						<a class="btn btn-primary" href="https://www.youtube.com/watch?v=_codASRbAZw" target="_blank" role="button"><i class="fab fa-youtube"></i>&nbsp;&nbsp; YouTube</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 text-center">
+						<h2>QA Automation Engineer, Bank Leumi (Pepper)</h2><hr>
+						<p> Responsible for the implementation of the Quantum automated testing framework.</p>
+					</div>
+					<div class="col-md-6 text-center">
+						<h2>QA Engineer, Home Diet</h2><hr>
+						<p>Created automated testing infrastructure with Selenium using Java - POM - Design Pattern and JUnit.</p>
+					</div>
+					<div class="col-md-6 text-center">
+						<h2>Active member in open source projects – within various groups</h2><hr>
+						<p>Maintained scripts in JS and created new functions according to changes in the site on which the script is running.</p>
+					</div>
+					<div class="col-md-6 text-center">
+						<h2>Graduate QA Automation course, with honors, SVCollege</h2><hr>
+						<p>Selenium - Java - JUnit - Created an automated test project in Github.</p>
+					</div>
+					<div class="col-md-6 text-center">
+						<h2>Graduate QA course, specializing in Web and Mobile, SVCollege</h2><hr>
+						<p>Android Studio - Created an APP.</p>
+					</div>
+					<div class="col-md-6 text-center">
+						<h2>BA, Behavioral Sciences, with honors (GPA 95.36), Netanya College</h2><hr>
+						<p>Member of the college debate team.</p>
+					</div>
+				</div>
+			</div>
+			<div id="projects" class="areaTwo">
+				<h1 id="project-header">My Free Code Camp Projects</h1>
+				<div class="row projects" id="projectsDiv">
+					<div class="col-md-6 text-center">
+						<h2>Tribute Page</h2><hr>
+						<p>Responsive with Dark/Light theme.</p>
+						<a id="projects-link" href="pages/indexTribute.html">
+							<img src="img/LandingPage.jpg">
+								<div class="project-tile">Tribute Page</div>
+							</img>
+						</a>
+					</div>
+					<div class="col-md-6 text-center">
+						<h2>Technical Document Page</h2><hr>
+						<p>Responsive with Dark/Light theme.</p>
+						<a id="projects-link" href="pages/indexTechnical.html">
+							<img src="img/TechnicalDocumentation.jpg">
+								<div class="project-tile">Technical Document Page</div>
+							</img>
+						</a>
+					</div>
+					<div class="col-md-6 text-center">
+						<h2>Product Landing Page</h2><hr>
+						<p>Responsive boxes layout</p>
+						<a id="projects-link" href="pages/indexLanding.html">
+							<img src="img/LandingPage.jpg">
+								<div class="project-tile">Product Landing Page</div>
+							</img>
+						</a>
+					</div>
+					<div class="col-md-6 text-center">
+						<h2>Survey Form Page</h2><hr>
+						<p>Responsive with Dark/Light theme.</p>
+						<a id="projects-link" href="pages/indexSurveyForm.html">
+							<img src="img/SurveyFormPage.jpg">
+								<div class="project-tile">Survey Form Page</div>
+							</img>
+						</a>
+					</div>	
+				</div>
+				<div id="contactMe">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2>Please feel free to contact me</h2><hr>
+							<p>E-mail: OrenVilderman@gmail.com</p>
+							<p>Area: Central Israel</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="areaThree">
+			<div class ="container-fixed">
+				<nav id="navbar">
+					<ul class="nav-pills bottom">
+						<li><a href="#">Oren Vilderman</a></li>
+						<li class="contact pull-right"><a href="#contactMe">Contact</a></li>
+						<li class="pull-right"><a href="#">About ME</a></li>
+						<li class="pull-right"><a href="#projects">Projects</a></li>
+					</ul>
+				</nav>
+			</div>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script defer src="js/main.js"></script>
+		</footer>
+	</body>
+</html>
