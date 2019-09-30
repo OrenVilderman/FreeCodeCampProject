@@ -1,11 +1,11 @@
 :root {
-	--main-header-text-color: white;
-	--main-dark-bg-color: black;
+    --main-header-text-color: white;
+    --main-dark-bg-color: black;
     --main-navbar-bg: #a0d4eb;
     --main-navbar-bg-opacity: rgba(158, 212, 234, 0.92);
     --main-navbar-hover-bg: #aad6be;
     --main-notice-shadow: #fff434;
-	--main-youtube-color: #f44336;
+    --main-youtube-color: #f44336;
     --main-linkedin-color: #0077b5;
 }
 
@@ -60,10 +60,10 @@ body{
 }
 
 #title, h2, legend {
-	font-size: 54px;
-	font-weight: bold;
-	text-align: center;
-	font-family: san-serif;
+    font-size: 54px;
+    font-weight: bold;
+    text-align: center;
+    font-family: san-serif;
     margin: 20px;
     text-shadow:
         1px 1px 0 var(--main-header-text-color),
@@ -106,6 +106,7 @@ legend {
 fieldset {
 	border-color: var(--main-dark-bg-color);
 }
+
 .required {
 	color: var(--main-youtube-color);
 }

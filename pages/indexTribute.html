@@ -25,112 +25,23 @@
 					<h3 id="headline">Here's how James Bach became a software testing expert</h3>
 					<ul>
 						<li><strong>1966</strong> - Born in the USA</li>
+						<li><strong>1983</strong> - Dropout of school</li>
+						<li><strong>1983</strong> - First job as a programmer</li>
+						<li><strong>1987</strong> - Started working at Apple as a "Test Manager"</li>
 						<li><strong>1999</strong> - Started working as independent consultant</li>
 						<li><strong>2001</strong> - Wrote the book: "Lessons Learned in Software Testing"</li>
 					</ul>
-						<blockquote
-						cite="http://news.rediff.com/report/2009/sep/14/pm-pays-tribute-to-father-of-green-revolution-borlaug.htm"
-						>
-						<p>
-							"Borlaug's life and achievement are testimony to the far-reaching
-							contribution that one man's towering intellect, persistence and
-							scientific vision can make to human peace and progress."
-						</p>
-						<cite>-- Indian Prime Minister Manmohan Singh</cite>
-						</blockquote>
-						<h3>
-						If you have time, you should read more about this incredible human being
-						on his
-						<a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug"target="_blank">Wikipedia entry</a>.
+					<blockquote	cite="http://news.rediff.com/report/2009/sep/14/pm-pays-tribute-to-father-of-green-revolution-borlaug.htm">
+					<p>
+						"First thing you need to know is there's absolutely no authority in the world that says who's software testing expert is, fewwww... okay don't worry about that there's no authority."
+					</p>
+					<cite>-- Becoming a Software Testing Expert with James Bach</cite>
+					</blockquote>
+					<h3>
+						If you wish to improve your logic as a testers you should learn more about James Marcus Bach
+						<a id="tribute-link" href="https://en.wikipedia.org/wiki/James_Marcus_Bach"target="_blank">Wikipedia entry</a>.
 					</h3>
-				  </section>
-				<nav id="navbar">
-					<header id="header" class="mainView">JUnit 5 User Guide</header>
-					<a href="#Overview" class="nav-link">Overview</a>
-					<a href="#WhatIsJUnit" class="nav-link">What is JUnit 5?</a>
-					<a href="#SupportedJavaVersions" class="nav-link">Supported Java Versions</a>
-					<a href="#GettingHelp" class="nav-link">Getting Help</a>
-					<a href="#DownloadingJUnitArtifacts" class="nav-link">Downloading JUnit Artifacts</a>
-					<a href="#JUnitFeatures" class="nav-link">JUnit 5 Features</a>
-					<a href="#ExampleProjects" class="nav-link">Example Projects</a>
-					<a href="#WritingTests" class="nav-link">Writing Tests</a>
-				</nav>
-				<nav id="navbarBottom">
-					<header id="header" class="mainView">JUnit 5 User Guide</header>
-					<a href="#Overview" class="nav-link">Overview</a>
-					<a href="#WhatIsJUnit" class="nav-link">What is JUnit 5?</a>
-					<a href="#SupportedJavaVersions" class="nav-link">Supported Java Versions</a>
-					<a href="#GettingHelp" class="nav-link">Getting Help</a>
-					<a href="#DownloadingJUnitArtifacts" class="nav-link">Downloading JUnit Artifacts</a>
-					<a href="#JUnitFeatures" class="nav-link">JUnit 5 Features</a>
-					<a href="#ExampleProjects" class="nav-link">Example Projects</a>
-					<a href="#WritingTests" class="nav-link">Writing Tests</a>
-				</nav>
-				<div id="main-doc">
-					<section class="main-section" id='Overview'>
-						<header>Overview</header>
-						<p>The goal of this document is to provide comprehensive reference documentation for programmers writing tests, extension authors, and engine authors as well as build tool and IDE vendors.</p>
-					</section>
-					<section class="main-section" id='WhatIsJUnit'>
-						<header>What is JUnit 5?</header>
-						<p>Unlike previous versions of JUnit, JUnit 5 is composed of several different modules from three different sub-projects.</p>
-						<code>JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage</code>
-						<p>The JUnit Platform serves as a foundation for launching testing frameworks on the JVM. It also defines the TestEngine API for developing a testing framework that runs on the platform. Furthermore, the platform provides a Console Launcher to launch the platform from the command line and a JUnit 4 based Runner for running any TestEngine on the platform in a JUnit 4 based environment. First-class support for the JUnit Platform also exists in popular IDEs (see IntelliJ IDEA, Eclipse, NetBeans, and Visual Studio Code) and build tools (see Gradle, Maven, and Ant).</p>
-						<ul>
-							<li>JUnit Jupiter is the combination of the new programming model and extension model for writing tests<br>and extensions in JUnit 5. The Jupiter sub-project provides a TestEngine for running Jupiter based tests on the platform.</li>
-							<li>JUnit Vintage provides a TestEngine for running JUnit 3 and JUnit 4 based tests on the platform.</li>
-						</ul>
-					</section>
-					<section class="main-section" id='SupportedJavaVersions'>
-						<header>Supported Java Versions</header>
-						<p>JUnit 5 requires Java 8 (or higher) at runtime. However, you can still test code that has been compiled with previous versions of the JDK.</p>
-					</section>
-					<section class="main-section" id='GettingHelp'>
-						<header>Getting Help</header>
-						<p>Ask JUnit 5 related questions on Stack Overflow or chat with us on Gitter.</p>
-					<section class="main-section" id='DownloadingJUnitArtifacts'>
-						<header>Downloading JUnit Artifacts</header>
-						<p>To find out what artifacts are available for download and inclusion in your project, refer to Dependency Metadata. To set up dependency management for your build, refer to Build Support and the Example Projects.</p>
-					</section>
-					<section class="main-section" id='JUnitFeatures'>
-						<header>JUnit 5 Features</header>
-						<p>To find out what features are available in JUnit 5 and how to use them, read the corresponding sections of this User Guide, organized by topic.</p>
-						<ul>
-							<li>Writing Tests in JUnit Jupiter</li>
-							<li>Migrating from JUnit 4 to JUnit Jupiter</li>
-							<li>Running Tests</li>
-							<li>Extension Model for JUnit Jupiter</li>
-							<li>JUnit Platform Launcher API</li>
-							<li>JUnit Platform Test Kit</li>
-						</ul>
-					</section>
-					<section class="main-section" id='ExampleProjects'>
-						<header>Example Projects</header>
-						<p>To see complete, working examples of projects that you can copy and experiment with, the junit5-samples repository is a good place to start. The junit5-samples repository hosts a collection of sample projects based on JUnit Jupiter, JUnit Vintage, and other testing frameworks. You’ll find appropriate build scripts (e.g., build.gradle, pom.xml, etc.) in the example projects. The links below highlight some of the combinations you can choose from.</p>
-						<ul>
-							<li>For Gradle and Java, check out the junit5-jupiter-starter-gradle project.</li>
-							<li>For Gradle and Kotlin, check out the junit5-jupiter-starter-gradle-kotlin project.</li>
-							<li>For Gradle and Groovy, check out the junit5-jupiter-starter-gradle-groovy project.</li>
-							<li>For Maven, check out the junit5-jupiter-starter-maven project.</li>
-							<li>For Ant, check out the junit5-jupiter-starter-ant project./li>
-						</ul>
-					</section>
-					<section class="main-section" id='WritingTests'>
-						<header>Writing Tests</header>
-						<p>The following example provides a glimpse at the minimum requirements for writing a test in JUnit Jupiter. Subsequent sections of this chapter will provide further details on all available features.</p>
-						<code>import static org.junit.jupiter.api.Assertions.assertEquals;</br>
-								import example.util.Calculator;</br>
-								import org.junit.jupiter.api.Test;</br></br>
-								class MyFirstJUnitJupiterTests {</br>
-								&ensp;&ensp;private final Calculator calculator = new Calculator();</br></br>
-								&ensp;&ensp;@Test</br>
-								&ensp;&ensp;void addition() {</br>
-								&ensp;&ensp;&ensp;&ensp;assertEquals(2, calculator.add(1, 1));</br>
-								&ensp;&ensp;}</br>
-								}</br>
-						</code>
-					</section>
-				</div>
+				</section>
 			</div>
 		</main>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
