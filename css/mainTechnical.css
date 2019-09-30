@@ -1,0 +1,126 @@
+:root {
+	--main-header-text-color: white;
+	--main-dark-bg-color: black;
+  --main-navbar-bg: #a0d4eb;
+  --main-navbar-bg-opacity: rgba(158, 212, 234, 0.92);
+  --main-navbar-hover-bg: #aad6be;
+  --main-notice-shadow: #fff434;
+	--main-youtube-color: #f44336;
+  --main-linkedin-color: #0077b5;
+}
+
+html {
+  background-color:var(--main-header-text-color) !important;
+  color:var(--main-dark-bg-color) !important;
+}
+
+nav#navbar a, nav#navbarBottom a, code{
+  display: block;
+  border: 1px solid var(--main-dark-bg-color);
+  padding: 5px;
+  margin: 10px 0;
+  text-decoration: none;
+  color:var(--main-dark-bg-color);
+}
+
+nav#navbarBottom {
+  display: none;
+}
+
+code {
+  background-color: var(--main-navbar-hover-bg);
+  padding: 20px;
+  display: block;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+}
+
+.modeChanger {
+  padding-left: 60px;
+  margin: -2px;
+  padding-bottom: 12px;
+  border: 14px;
+  border-radius: 5px;
+}
+
+#darkMode {
+    background-color: #522c78;
+}
+
+#lightMode {
+    background-color: #a0d4eb;
+}
+
+h1, h2, p, div, select {
+    color: var(--main-dark-bg-color);
+}
+
+div.main-body {
+  display: grid;
+  grid-template-columns: minmax(300px, auto) 1fr;
+  grid-gap: 20px;
+  grid-template-areas: "navbarTop mainContent" "navbarBottom mainContent";
+}
+
+nav#navbar {
+  grid-area: navbar;
+  top: 50px;
+  position: fixed;
+  width: 300px;
+}
+
+main#main-doc {
+  grid-area: mainContent;
+  position: fixed;
+}
+
+nav#navbarBottom {
+  grid-area: navbarBottom;
+  position: fixed;
+  width: 300px;
+  top: 450px;
+}
+
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+
+  nav#navbarBottom {
+    display: block;
+  }
+
+  div.main-body {
+    grid-template-areas: "navbar" "mainContent" "navbarBottom";
+    grid-column-gap: 0;
+  }
+
+  main#main-doc {
+    position: inherit;
+    width: 100%;
+  }
+
+  nav#navbar {
+    position: inherit;
+    width: 95%;
+  }
+
+  nav#navbarBottom {
+    position: inherit;
+    width: 100%;
+  }
+
+  .modeChanger {
+    padding-left: 32px;
+    margin: -50px;
+    padding-bottom: 12px;
+    border: 4px;
+    border-radius: 5px;
+  }
+
+}
