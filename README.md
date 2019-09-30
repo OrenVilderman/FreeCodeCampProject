@@ -7,7 +7,7 @@
 # Main personal portfolio headline and links
 ![image](https://user-images.githubusercontent.com/46252621/65913959-639aab80-e3d9-11e9-87cc-798b85ad6a95.png)
 
-# Free Code Camp - projects preview and links
+# Free Code Camp - Projects preview and links
 ![image](https://user-images.githubusercontent.com/46252621/65914058-875df180-e3d9-11e9-9a18-0140c0017b9c.png)
 
 # Example project - Survey Form
