@@ -14,24 +14,24 @@
 }
 
 .modeChanger {
-    padding-left: 60px;
+	padding-left: 60px;
 	margin: -2px;
 	margin-top: 100px;
-    padding-bottom: 12px;
-    border: 14px;
-    border-radius: 5px;
+	padding-bottom: 12px;
+	border: 14px;
+	border-radius: 5px;
 }
 
 #darkMode {
-    background-color: #522c78;
+	background-color: #522c78;
 }
 
 #lightMode {
-    background-color: #a0d4eb;
+	background-color: #a0d4eb;
 }
 
 h1, h2, p, div, select {
-    color: var(--main-header-text-color);
+	color: var(--main-header-text-color);
 }
 
 a {
@@ -47,11 +47,11 @@ a {
 }
 
 ::placeholder {
-    color: var(--main-dark-bg-color);
+	color: var(--main-dark-bg-color);
 }
 
 select {
-    background-color: var(--main-header-text-color);
+	background-color: var(--main-header-text-color);
 }
 
 html {
@@ -171,7 +171,7 @@ p {
 }
 
 .btn.btn-primary:hover > .fa-linkedin {
-	color: var(--main-header-text-color);
+	color: white;
 }
 
 .fa-github {
