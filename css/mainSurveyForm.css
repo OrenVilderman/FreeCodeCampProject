@@ -54,9 +54,8 @@ select {
     background-color: var(--main-header-text-color);
 }
 
-
 body{
-    background: url("../img/survey-bg.jpg"); /*Photo by Markus Spiske on Unsplash*/
+	background: url("../img/survey-bg.jpg"); /*Photo by Markus Spiske on Unsplash*/
 	background-size: cover;
 	height: auto;
 }
